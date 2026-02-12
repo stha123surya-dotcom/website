@@ -1,148 +1,171 @@
+/* Resets*/
+
 *{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+    max-width: 1180px;
+    justify-content: center;
+    align-items: center;
+        box-sizing: border-box;
+
 }
 
-html,body{
-    width: 100%;
-    height: 100%;
-    
+:root{
+    --primary-text-color: blue;
+    --secondary-tect-color: red;
+    --accent-color:rgb(121, 61, 61);
+    --padding-inline-section:20px;
+
+}
+h1{
+    font-size: 3rem;
 }
 
-#main{
-    width: 100vw;
-    height: 100vh;
-    background-color: whitesmoke;
-    
+h2{
+    font-size: 2rem;
+
 }
-#logo{
-    width: 100vw;
-    height: 10vh;
-    background-color: whitesmoke;
-    position: fixed;
-    display: flex ;
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: cursive;
+    font-size: 1.25rem ;
+    color: var(--secondary-tect-color);
+    line-height: 1.8rem;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+flex{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    border: solid 1px;
+    background-color: black;
+    color: black;
+}
+/* utility classes*/
+
+.banner{
+    font-family: fantasy;
+    font-size: 1rem;
+
+}
+
+.container{
+    margin-inline:auto;
+    max-width: 1180px;
+    padding-inline: var(--padding-inline-section);
+}
+
+.banner-text{
+    color: rgb(0, 51, 95);
+    padding: 15px 30px;
+    text-align: center;
+}
+.banner{
+    background-color: aqua;
+}
+
+/* nav bar */
+
+.logo {
+    
+    color: var(--secondary-text-color);
+    display: flex;
     align-items:end;
-    justify-content:right ;
-    
-
-}
-
-    .text{
-        margin: 20px;
-        font-size: x-large;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: right;
-        
-        
-        
-    }
-
-    .text:hover{
-        color: rgb(245, 0, 0);
-        
-    }
-
-    #logo2{
-        width: 100vw;
-        height: 10vh;
-        background-color: whitesmoke;
-
-    }
-
-    
-
-  
-
-#body1{
-       width: 100vw;
-    height: 100vh;
-    background-color:whitesmoke;
-    display: flex;
-}
-    
-#personal{
-    width: 30vw;
-    height: 100vh;
-    background-color: rgb(188, 188, 243);
-    margin-left: 40px;
-    margin-bottom: 0%;
-    border-radius: 10%;
-    
-    
-
-}
-#image1{
     justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-#image1 img{
-    height: 200px;
-    margin-top: 5%;
-    border-radius: 20%;
-    object-fit:cover;
-    display: flex;
+    gap: var(--padding-inline-section);
     
-      
 }
-
 .text1{
-    font-family: cursive;
-    font-size: small;
-    margin: 25px;
-    padding: px;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    display: flex;
-    
-}
-.text3{
-    font-family: cursive;
+    font-family: 'Times New Roman';
     font-size: large;
-    margin: 3%;
-    margin-left: 5%;
-    padding: 0px;
-    justify-content:center;
-    align-items:center;
-    text-align: justify;
-    display: flex;
+    padding: 10px 10px;
+    color: brown;
+}
+.text1:hover{
+    color: antiquewhite;
+    border: solid 2px;
+    background-color: bisque;
 }
 
-.text2{
-    font-family: cursive;
-    font-size: x-large;
-    margin: 1%;
-    padding: 0px;
+a{
+    color: brown;
+}
+
+/* intro */
+.intro{
+    height: 500px;
+    width: 1180px;
+    display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+.box{
+    border: solid 1px;
+    height: 400px;
+    width: 400px;
+    background-image: url(Images/photo1.jpg);
+    background-size: 100%;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.text2{
+    font-family: 'Times New Roman';
+    font-size: large;
+    padding: 10px 10px;
+    color: brown;
     text-align: justify;
+    
+}
+
+/* Experience */
+.exp{
+    height: 600px;
+    width: 1180px;
+    
     display: flex;
     
-} 
-
-    #work{
-    width: 30vw;
-    height: 100vh;
-    background-color: rgb(247, 181, 165);
-    margin-left: 40px;
-    margin-bottom: 0%;
-    border-radius: 10%;
-        
 }
-#skill{
-    margin-top: 0%;
-    display: flex;
-    align-items: center;
+  .works-skills{
+    width: 500px;
+    height: 600px;
+    
     justify-content: center;
+    align-items: center;
+           
+}
+.box1{
+   justify-content: center;
+   align-items: center;
+    height: 300px;
+    width: 350px;
+    background-image: url(Images/image.png);
+    background-position: center;
+    margin-left: 40px;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    
+}
+.skills{
+    width: 680px;
+    height: 600px;
+    background-color: rgb(236, 230, 230);
+    
     
 }
 
 #skill img{
-    height: 250px;
-    margin-top: 1px;
+    width: 75%;
+    margin-top: 1%;
     border-radius: 20%;
     object-fit:cover;
     display: flex;
@@ -151,16 +174,15 @@ html,body{
     
         
 }
-#exp{
+#expe{
     margin-left: 5%;
     margin-top: 7%;
-    
+    background-color: aqua;
 }
 .ex1{
     background-color: brown;
-    border: solid 2px;
-    border-radius: 25px;
-    padding: 10px;
+    border: solid 0.1%;
+        padding: 3%;
     width: 75%;
     margin-bottom: 2%;
     
@@ -168,9 +190,8 @@ html,body{
 
 .ex2{
     background-color: brown;
-    border: solid 2px;
-    border-radius: 25px;
-    padding: 10px;
+    border: solid 0.1%;
+        padding: 3%;
     width: 90%;
     margin-bottom: 2%;
     
@@ -178,9 +199,8 @@ html,body{
 
 .ex3{
     background-color: brown;
-    border: solid 2px;
-    border-radius: 25px;
-    padding: 10px;
+    border: solid 0.1%;
+        padding: 3%;
     width: 60%;
     margin-bottom: 2%;
     
@@ -190,7 +210,7 @@ html,body{
     width: 30vw;
     height: 100vh;
     background-color: rgb(98, 247, 130);
-    margin-left: 40px;
+    margin-left: 3%;
     margin-bottom: 0%;
     border-radius: 10%;
 
@@ -199,10 +219,7 @@ html,body{
 .text4{
     font-family: cursive;
     font-size:small;
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 0px;
+    padding: 0%;
     justify-content:center;
     align-items:center;
     text-align: center;
@@ -213,101 +230,60 @@ html,body{
 .text5{
     font-family: cursive;
     font-size:small;
-    margin-top: 0%;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 0px;
+    margin-bottom: 50px;
+    padding: 0%;
     justify-content:center;
     align-items:center;
     text-align: center;
     display: flex;
     font-style: italic;
     color: rgba(15, 9, 70, 0.705);
+    text-wrap: initial;
 }
 
  
-#body2{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        margin-top: 2%;
-    }
 
-#project1{
-       
-    width: 75vw;
-    height: 100vh;
-    background-color: rgb(137, 137, 240);
-    border-radius: 50px;
-    
-    
-}
-
-#photo{
-     height: 90.75vh;
-    width: 100vw;
-    
+/* work */
+.work{
+    height: auto;
+    width: auto;
     display: flex;
+    
+    
 }
-
-
-
-#interior1{
+.interior1{
+border: solid 1px;
+height: 350px;
+width: 350px;
+background-image: url(Images/Interior101.png);
+justify-content: center;
+align-items: center;
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center;
+margin-right: 20px;
+}
+.building1{
     border: solid 1px;
-    height: 90.75vh;
-    width: 25vw;
-    image-rendering: auto;
+    height: 350px;
+width: 350px;
+    background-image: url(Images/birgunj.jpg);
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
 }
-#building1{
+.outdoor1{
     border: solid 1px;
-    height: 90.75vh;
-    width: 25vw;
-    background-color: rgb(62, 226, 130);
+    height: 350px;
+width: 350px;
+    background-image: url(Images/outdoor.jpg);
+    justify-content: center;
+    align-items: center;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
 }
-#outdoor1{
-    border: solid 1px;
-    height: 90.75vh;
-    width: 25vw;
-    background-color: rgb(78, 60, 233);
-}
-
-#interior1 img{
-  height: 100%;
-    margin-top: 0%;
-    margin-right: 80%;
-    border-radius: 0%;
-    object-fit:cover;
-    display: flex;
-}
-
-#building1 img{
-  height: 100%;
-    margin-top: 0%;
-    border-radius: 0%;
-    object-fit:cover;
-    display: flex;
-    margin:auto;
-}
-
-#outdoor1 img{
-  height: 100%;
-    margin-top: 0%;
-    border-radius: 0%;
-    object-fit:cover;
-    display: flex;
-}
-
-#contact{
-       
-    width: 25vw;
-    height: 100vh;
-    background-color: rgb(52, 116, 73);
-    
-}
-
-#message{
-width: 25vw;
-    height: 70vh;
-    background-color: rgb(31, 255, 106);
-}
-
